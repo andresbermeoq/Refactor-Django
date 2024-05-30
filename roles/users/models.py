@@ -32,7 +32,7 @@ class Area(models.Model):
 class RoleArea(models.Model):
     role = models.ForeignKey(Role, on_delete=models.CASCADE)
     area = models.ForeignKey(Area, on_delete=models.CASCADE)
-    is_leader = models.BooleanField(default=True)
+    is_leader = models.BooleanField(default=False)
 
     class Meta:
         unique_together = ('role', 'area')

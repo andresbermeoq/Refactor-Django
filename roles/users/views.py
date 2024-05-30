@@ -1,13 +1,20 @@
 from rest_framework import viewsets
+from django.contrib.auth.models import User
 from .models import Country, Permission, Role, Area, RoleArea, RolePermission
 from .serializers import (
     CountrySerializer,
+    UserSerializer,
     PermissionSerializer,
     RoleSerializer,
     AreaSerializer,
     RoleAreaSerializer,
     RolePermissionSerializer,
 )
+
+
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
 
 
 class CountryViewSet(viewsets.ModelViewSet):
