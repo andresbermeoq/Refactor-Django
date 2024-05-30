@@ -1,12 +1,13 @@
 from rest_framework import viewsets
-from .models import Country, Permission, Role, Area, RoleArea, RolePermission
+
+from .models import Area, Country, Permission, Role, RoleArea, RolePermission
 from .serializers import (
+    AreaSerializer,
     CountrySerializer,
     PermissionSerializer,
-    RoleSerializer,
-    AreaSerializer,
     RoleAreaSerializer,
     RolePermissionSerializer,
+    RoleSerializer,
 )
 
 
