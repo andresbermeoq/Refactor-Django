@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "django-endpoints"
+version = "0.1.0"
+description = ""
+authors = ["andresbermeoq <andresbermeoq1@gmail.com>"]
+readme = "README.md"
+packages = [{include = "django_endpoints"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+django = "^5.0.6"
+djangorestframework = "^3.15.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
