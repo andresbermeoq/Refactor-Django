@@ -42,6 +42,25 @@ sales_area_usa = Area.objects.create(name='Ventas', country=usa)
 sales_area_mexico = Area.objects.create(name='Comercialización', country=mexico)
 
 
+## Testing de la solucion
+
+Dentro de la carpeta Test
+
+```bash
+❯ py roles/manage.py test users
+Found 2 test(s).
+Creating test database for alias 'default'...
+System check identified no issues (0 silenced).
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.397s
+
+OK
+
+Destroying test database for alias 'default'...
+```
+
+
 
 
 
